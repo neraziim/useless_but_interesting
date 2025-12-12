@@ -15,14 +15,23 @@ Transcription, Translation은 능력이 되는 대로 구현하려함.
 
 const codons = ['AGT', 'CGA', 'TTA', 'GCC', 'GTA'];
 
-function dnaToAminoAcid(codon) {
-  const isSerine = ['AGT', 'AGC'].includes(codon);
-  const isValine = ['GTA', 'GTC', 'GTT', 'GTG'].includes(codon);
-  const isAlanine = ['GCC', 'GCA', 'GCT', 'GCG'].includes(codon);
-  const isArginine = ['CGA', 'CGG', 'CGT', 'CGC', 'AGA', 'AGG'].includes(codon);
-  const isLeucine = ['TTA', 'TTG', 'CTT', 'CTC', 'CTA', 'CTG'].includes(codon);
+const aminoAcids = {
+  serine: ['AGT', 'AGC'],
+  valine: ['GTA', 'GTC', 'GTT', 'GTG'],
+  alanine: ['GCC', 'GCA', 'GCT', 'GCG'],
+  arginine: ['CGA', 'CGG', 'CGT', 'CGC', 'AGA', 'AGG'],
+  leucine: ['TTA', 'TTG', 'CTT', 'CTC', 'CTA', 'CTG'],
+};
 
-  if (isSerine) {
+function whatAminoAcid(codon) {
+  for (i of aminoAcid.includes) {
+
+  }
+}
+
+
+function dnaToAminoAcid(codon) {
+  if () {
     return 'Ser';
   }
 
